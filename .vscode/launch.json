@@ -8,7 +8,6 @@
             "type": "aws-sam",
             "request": "direct-invoke",
             "name": "typescript-sam-reprex:HelloWorldFunction (nodejs14.x)",
-            "preLaunchTask": "build",
             "invokeTarget": {
                 "target": "template",
                 "templatePath": "${workspaceFolder}/template.yaml",
@@ -23,7 +22,6 @@
             "type": "aws-sam",
             "request": "direct-invoke",
             "name": "API typescript-sam-reprex:HelloWorldFunction (nodejs14.x)",
-            "preLaunchTask": "build",
             "invokeTarget": {
                 "target": "api",
                 "templatePath": "${workspaceFolder}/template.yaml",

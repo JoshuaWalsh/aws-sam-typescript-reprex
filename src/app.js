@@ -1,6 +1,6 @@
 // const axios = require('axios')
 // const url = 'http://checkip.amazonaws.com/';
-import 'dotenv';
+require('dotenv');
 let response;
 
 /**
@@ -15,7 +15,7 @@ let response;
  * @returns {Object} object - API Gateway Lambda Proxy Output Format
  * 
  */
-export async function lambdaHandler(event, context) {
+exports.lambdaHandler = function(event, context) {
     try {
         response = {
             'statusCode': 200,
